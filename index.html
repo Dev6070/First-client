@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARKAT COMPUTING</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">LOGO</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="homepage" id="home">
+      <div class="content">
+        <div class="text">
+          <h1>Barkat Computers</h1>
+          <p>
+            Discover top-quality camping gear for unforgettable outdoor adventures. <br> Gear up and make lasting memories.</p>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>
+              <p style="color: white; display: inline;">Computer Repairing</p>
+            </li>
+            <li>
+              <span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>
+              <p style="color: white; display: inline;">Laptop Repair</p>
+            </li>
+            <li>
+              <span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>
+              <p style="color: white; display: inline;">CCTV Installations</p>
+            </li>
+            <li>
+              <span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>
+              <p style="color: white; display: inline;">Assemble Computers</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="image-container">
+          <img src="images/home-bg.jpg" alt="Camping Image">
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="left-content">
+          <h2>About Us</h2>
+          <p> We specialize in assembling computers according to 
+            customer requirements and providing top-notch
+             computer and laptop repair services.</p>
+             <button onclick="redirectToAboutUs()">Learn More</button>
+        </div>
+        <div class="right-content">
+          <div class="images">
+            <img src="images/home-bg.jpg" alt="Image 1">
+          </div>
+          <div class="images-to">
+            <img src="images/home-bg.jpg" alt="Image 2">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="services-section">
+      <div class="services-img">
+        <img src="images/home-bg.jpg" alt="Service Image">
+      </div>
+      
+      <div class="services-text">
+        <h1>Our Services</h1>
+        <ul>
+          <li><span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>  Computer Repair </li>
+          <li><span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>  CCTV Installations</li>
+          <li><span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>   Laptop Repair</li>
+          <li><span class="fa-solid fa-circle-check" style="color: #00cc18;"></span>  Assemble Computers</li>
+          <!-- Add more services as needed -->
+        </ul>
+      </div>
+    </div>
+    <style>
+    .services-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 100px; /* Add space between the sections */
+      background-color: rgb(219, 219, 219);
+      height: 110vh;
+    }
+    
+    .services-img img {
+      margin-top:0%;
+      margin-left: 10%;
+      height: 500px; /* Adjust the height of the image */
+      width: 100vh; /* Adjust the width of the image */
+      object-fit: cover;
+      border-radius:5px ;
+    }
+ 
+    .services-text {
+      margin-right: 60px;
+      justify-content: center;
+      align-items:center;
+      padding-right: 200px;
+      margin-bottom: 25px;
+      
+    }
+    @media screen and (max-width:1290px) {
+      .services-text{
+      justify-content: center;
+      align-items:center;
+      /* padding-right: 300px; */
+      margin-left:10%;
+    }
+    .services-text ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .services-text li {
+      margin-top: 10px;
+      margin-bottom: 8px; /* Add space between list items */
+    }
+
+    .services-text li span {
+      margin-right: 10px; /* Add space between the bullet and the text */
+    }
+    .services-text h1 {
+      font-size: 50px;
+      margin-top: 15px;
+      margin-bottom: 20px; /* Add space between the heading and the list */
+    }
+  }
+
+    @media screen and (max-width:760px) {
+      .services-text{
+      justify-content: center;
+      align-items:center;
+      /* padding-right: 300px; */
+      margin-left:10%;
+    }
+    }
+    
+    .services-text ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .services-text li {
+      margin-top: 10px;
+      margin-bottom: 8px; /* Add space between list items */
+    }
+
+    .services-text li span {
+      margin-right: 10px; /* Add space between the bullet and the text */
+    }
+    .services-text h1 {
+      font-size: 50px;
+      margin-top: 15px;
+      margin-bottom: 20px; /* Add space between the heading and the list */
+    }
+    
+    @media screen and (max-width: 560px) {
+  .services-section {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    height: auto; /* Adjust height to auto for content flexibility */
+    width:  auto; /* Adjust width to auto for content flexibility */
+   
+  }
+
+  .services-img img{
+    margin-top: 20px;
+    border-radius: 5px;
+    height: auto;
+    width: 82%;
+    display: flex;
+    margin-left: 10%;
+}
+   
+
+  .services-text {
+    padding-right:0;
+    margin: 0;
+    
+  }
+
+  .services-text h1 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+  .col-information{
+    /* margin: 0; */
+    text-align: center;
+  }
+}
+
+    /* Additional styling as needed */
+  </style>
+
+<section class="some-info" id="some">
+  <div class="conts">
+    <div class="left-side">
+  
+      <p> Our comprehensive services include computer 
+        assembly, hardware repairing, software installation
+         and professional CCTV camera installations.</p>
+         <p>We offer customized computer solutions  
+        and ensure the highest level of customer
+         satisfactio.</p>
+         
+    </div>
+    <div class="right-side">
+      <div class="img-in">
+        <img src="images/home-bg.jpg" alt="Img1">
+      </div>
+      <div class="img-info">
+        <img src="images/home-bg.jpg" alt="Img2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .some-info {
+  padding: 10px 0;
+}
+
+.conts {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center; /* Center items vertically */
+  flex-direction: row; /* Align items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.left-side {
+  width: 48%; /* Adjust the width of the left content */
+  box-sizing: border-box; /* Include padding and borders in the total width */
+  margin-right: 2%; /* Add a small margin between left and right content */
+}
+.left-side p{
+  margin-top: 5%;
+}
+
+.left-side p {
+  padding-right: 80px;
+  margin-right: 5%;
+  padding-left: 125px;
+  margin-bottom: 10px; /* Add space below the paragraph */
+}
+
+
+
+.right-side {
+  margin-top: 80px;
+  display: flex;
+  gap:40px;
+  /* justify-content: space-between; Adjust as needed */
+  width: 48%; /* Adjust the width of the right content */
+  box-sizing: border-box; /* Include padding and borders in the total width */
+}
+
+.img-in img,
+.img-info img {
+  border-radius: 2.5%;
+  height: 50vh;
+  width: 40vh;
+  object-fit: cover;
+  /* justify-content: space-between; */
+  gap:10px;
+}
+/* .img-in img {
+  margin-right: 20px; 
+} */
+.img-info img {
+  width: 250px;
+}
+
+.img-in{
+  padding-left:0%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .conts {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+  }
+
+  .left-side{
+    width: 100%;
+  }
+
+  .right-side {
+    align-items: center; /* Center items horizontally for smaller screens */
+    width: 100%;
+  }
+
+  .img-in img,
+  .img-info img {
+    width: 100%; /* Adjust the width of the images for smaller screens */
+    height: auto; /* Adjust the height of the images for smaller screens */
+  }
+  .left-side p {
+    padding-right: 0; /* Remove padding for smaller screens */
+    margin: 5%; /* Remove margin for smaller screens */
+    padding-left: 0; /* Remove padding for smaller screens */
+    text-align: center;
+  }
+  .right-side{
+    gap:10px;
+  }
+  .contact{
+    padding-top: 30px;
+  }
+  .services-text {
+    padding-right: 0;
+  }
+}
+
+</style>
+    
+
+    <section class="contact" id="contact">
+ 
+      <div class="row">
+        <div class="col-information">
+          <h1>Contact Us</h1>
+          <p> Get in touch with us for all your
+            customer and CCTV needs.</p>
+          <div class="contact-details">
+            <p><i class="fas fa-envelope"></i> barkat123@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +91 989-859-1313</p>
+          </div>          
+        </div>
+        <div class="col form">
+          <form>
+            <input type="text" placeholder="Name*" required>
+            <input type="email" placeholder="Email*" required>
+            <textarea placeholder="Message*" required></textarea>
+            <button id="submit" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <style>
+
+      .footer-wrapper {
+        position: relative;
+        overflow: hidden;
+        
+      }
+      
+      .contact h1{
+        font-size:50px;
+      }
+
+      .col-information p{
+        margin-bottom:3%;
+          
+      }
+
+      .col-information {
+            margin-bottom: 10%;
+      }
+
+      .footer{
+        position: relative;
+        z-index: 1;
+      }
+
+
+      footer {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  height: 350px;
+  justify-content: center;
+  overflow: hidden;
+  background: #002080;
+  padding: 20px 0;
+  -webkit-clip-path: ellipse(71% 59% at 50% 60%);
+  clip-path: ellipse(71% 59% at 50% 60%);
+  position: relative;
+}
+
+footer div {
+  flex-direction: column;
+  padding: 0 10px;
+  max-width: 170vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 100;
+  z-index: 1;
+}
+
+footer div span {
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+  margin-left:80px;
+}
+.footer-button{
+  margin-top: -17px;
+  margin-right: 80px;
+
+}
+
+footer img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+ .circle-element {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  right: 295px;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Add this line */
+   clip-path: circle(50% at 50% 50%); 
+}
+.circle-element img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.footer-wrapper {
+  position: relative;
+}
+.footer-button{
+  padding-right: 76%;
+  width: 500px;
+}
+.footer-button a {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  
+}
+
+.footer-button a:hover {
+  /* color: #333;7 */
+  background-color: none; /* Change to your preferred hover color */
+}
+.copy-Right {
+  padding-left:650px;
+}
+
+@media  (max-width:570px) {
+  .footer-button {
+    padding-right: 100px;
+    padding-top:20px;
+    width: 90%; /* Make the button width responsive */
+    left: 5%; /* Adjust the horizontal position */
+    transform: none; /* Remove the horizontal centering */
+  }
+  
+}
+@media (max-width: 768px) {
+  .copy-Right {
+    display: none; /* Hide the copyright text on screens smaller than 768px */
+  }
+
+  .footer-button {
+    padding-right: 420px;
+    padding-top:20px;
+    width: 90%; /* Make the button width responsive */
+    left: 5%; /* Adjust the horizontal position */
+    transform: none; /* Remove the horizontal centering */
+  }
+
+}
+
+@media (max-width: 550px) {
+  .footer-button {
+    padding-left: 100px; /* Reset padding-right */
+    display: none; /* Hide the copyright text on screens
+  
+  }
+}
+@media (max-width: 1300px) {
+  .footer-content {
+    padding-right: 2px;
+  }
+  .circle-element {
+    background: none;
+    width: 30vw;
+    height: 30vw;
+    right: 2.5vw;
+    /* position: fixed; */
+  }
+}
+
+@media (max-width: 768px) {
+  .circle-element {
+    width: 30vw;
+    height: 30vw;
+    right: 2.5vw;
+    /* position: fixed; */
+  }
+}
+
+
+@media (max-width: 560px) {
+  .circle-element {
+    display: none; /* Add this line */
+  }
+}
+    </style>
+
+
+<div class="footer-wrapper">
+  <footer>
+    <div>
+      <div class="footer-content">
+        <span>
+          <img src="images/home-bg.jpg" alt="Small Image">
+          <h1>Barkat Computers & <br>CCTV Installation</h1>
+        </span>
+        <div class="copy-Right">
+          <p>© 2023 All Rights Reserved</p>
+        </div>
+      </div>
+      <div class="footer-button">
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <div class="circle-element">
+    <img src="images/home-bg.jpg" alt="Image Description">
+  </div>
+</div>
+    <script>
+      let nav = document.querySelector("nav");
+        window.onscroll = function() {
+          if(document.documentElement.scrollTop > 20){
+            nav.classList.add("sticky");
+          }else {
+            nav.classList.remove("sticky");
+          }
+        }
+      </script>
+      <script>
+        function redirectToAboutUs() {
+          window.location.href = 'about.html';
+        }
+      </script>
+
+  </body>
+</html>

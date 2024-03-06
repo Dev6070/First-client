@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARKAT COMPUTING</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        
+    .about{
+        padding-top: 200px;
+        padding-bottom: 100px;
+    } 
+    .about h2{
+        font-size: 50px;
+    }
+    .company-info {
+    display: flex;
+    justify-content: center; /* Align content horizontally in the center */
+    align-items: center; /* Align content vertically in the center */
+}
+.info{
+    display: flex;
+    justify-content: center; /* Align content horizontally in the center */
+    align-items: center; /* Align content vertically in the center */
+}
+
+.heading-container h3 {
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+.paragraph-container {
+    max-width: 100%;
+    text-align: left;
+}
+.paragraph{
+    max-width: 100%;
+    text-align:right;
+}
+.paragraph p{
+    padding-top: 10px;
+    padding-right: 150px;
+    text-align: left;
+    text-align: justify;
+
+}
+
+
+.heading-container {
+    padding-right: 20px; /* Adjust as needed to provide space between heading and paragraph */
+}
+.heading{
+    margin-right:1%;
+    padding-left: 20px; /* Adjust as needed to provide space between heading and paragraph */
+
+}
+.heading h3 {
+    white-space: nowrap; /* Prevent text from wrapping */
+    padding-left: 46px;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right:30px;
+}
+
+.paragraph-container p {
+    margin: 5%; /* Remove default margin for the paragraph */
+    padding-left: 150px;
+    padding-top: 50px;
+    text-align: left;
+    text-align: justify;
+}
+.image-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between images */
+    margin-top: 10px; /* Add margin for spacing */
+    margin: 10px;
+    padding-right: 30px;
+    margin-left: 1%;
+    margin-right:3%;
+
+}
+
+.image-container img {
+    width: 50%; /* Set the width of the images as needed */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+}
+.que{
+    margin-top: 15%;
+    text-align:left;
+    margin-left:-30%;
+    padding-top: 10px;
+}
+.que h3{
+    font-size: 30px;
+    /* padding-left: 10px; */
+
+
+}
+
+@media screen and (max-width: 560px) {
+  .navbar #hamburger-btn {
+    /* padding-left: 100px; */
+    cursor: pointer;
+    padding-right: 1% ;
+    display: block;
+    margin: 0;
+   
+  }
+}
+@media screen and (max-width: 768px) {
+    /* Existing styles remain unchanged */
+
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about h2 {
+    padding-top: 100px;
+    font-size: 30px;
+}
+
+.company-info{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Reverse the order of children in column direction */
+}
+.info{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of children in column direction */
+
+}
+.heading-container,
+.paragraph-container,
+.heading,
+.paragraph,
+.que,
+.image-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading-container h3,
+.heading h3,
+.que h3 {
+    font-size: 20px;
+    padding-left: -16px;
+    padding-right: 10px;
+}
+.heading h3{
+    padding-top: 50px;
+}
+
+.paragraph-container p,
+.paragraph p,
+.heading-container p,
+.que p {
+    max-width: 100%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0%;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: -2%;
+}
+
+.que {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 0;
+}
+
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="#">LOGO</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+   
+    <section class="about" id="about">
+      <h2>Get to know us</h2>
+      <p>Providing customized computer solutions and expert CCTV installation.</p>
+      <div class="row company-info">
+        <div class="heading-container">
+            <h3>Service and History</h3>
+        </div>
+        <div class="paragraph-container">
+            <p>Established in 2006, Barkat Computer in Gopipura, Surat is a 
+                leading Computer Software Dealers. It's a well-known one-stop shop for
+                 local and out-of-town customers. They prioritize customer satisfaction,
+                 have a dedicated team, and plan to expand their products and services.
+                 Located at Momnawad Main Road, Near Sagrampura Police Chowki,
+                 it offers a range of services including Computer Dealers,
+                 Computer Repair & Services, and more.</p>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="images/home-bg.jpg" alt="First Image">
+        <img src="images/home-bg.jpg" alt="Second Image">
+    </div>
+    <div class="row info">
+    <div class="paragraph">
+        <p>At Barkat Computer in Gopipura, you'll find a wide products and services
+            to meet your needs. The staff is friendly and helpful, always ready to
+            answer your questions. They accept various payment methods
+            like cash, credit card, and digital wallets.
+            Open from 10:00 AM to 8:00 PM</p>
+      </div>
+      <div class="heading">
+        <h3>Product and Services</h3>
+    </div>
+    </div>
+      <div class="row que">
+        <h3>Frequently Asked Questions</h3>
+        <h4> 1. What are the various mode of payment accepted here ? </h4>
+        <p>You can make payment Via Amazon Pay, BHIM, Cash, Cheques, G Pay, Paytm, Payumoney, PhonePe, UPI</p>
+        <h4>  2. Which is the nearest landmark ?  </h4>
+        <p>You can easily locate the establishment as it is in close proximity to Near Sagrampura Police Chowki</p>
+        <h4>  3. What are its hours  of operations ? </h4>
+        <p>The establishment is functional </p>
+        <ul>Monday:- 10:00 Am - 8:00 Pm</ul>
+        <ul> Tuesday:- 10:00 Am - 8:00 Pm</ul>
+        <ul> Wednesday:- 10:00 Am - 8:00 Pm</ul>
+        <ul> Thursday:- 10:00 Am - 8:00 Pm</ul>
+        <ul> Friday:- 10:00 Am - 8:00 Pm</ul>
+        <ul> Saturday:- 10:00 Am - 8:00 Pm</ul>
+        <ul> Sunday:- 10:00 Am - 8:00 Pm</ul>
+      </div>
+    </section>
+
+
+    <style>
+
+      footer {
+        margin-top: 200px;
+        width: 100%;
+        display: flex;
+        height: 350px;
+        justify-content: center;
+        overflow: hidden;
+        background: #002080;
+        padding: 20px 0;
+        -webkit-clip-path: ellipse(71% 59% at 50% 60%);
+        clip-path: ellipse(71% 59% at 50% 60%);
+        position: relative;
+      }
+      
+      footer div {
+        flex-direction: column;
+        padding: 0 10px;
+        max-width: 170vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-top: 100;
+        z-index: 1;
+      }
+      
+      footer div span {
+        flex-direction: column;
+        color: #fff;
+        width: 100%;
+        margin-left:80px;
+      }
+      .footer-button{
+        margin-top: -17px;
+        margin-right: 80px;
+      
+      }
+      
+      footer img {
+        max-width: 100px;
+        margin-bottom: 10px;
+        margin: auto;
+        padding-top: 50px;
+      }
+      
+       .circle-element {
+        width: 300px;
+        height: 300px;
+        background-color: #ff0000;
+        border-radius: 50%;
+        position: absolute;
+        right: 295px;
+        top: 10%;
+        transform: translateY(-50%);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Add this line */
+         clip-path: circle(50% at 50% 50%); 
+      }
+      .circle-element img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      
+      .footer-wrapper {
+        position: relative;
+      }
+      .footer-button{
+        padding-right: 76%;
+        width: 500px;
+      }
+      .footer-button a {
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: 2px solid #fff;
+        border-radius: 6px;
+        transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        
+      }
+      
+      .footer-button a:hover {
+        /* color: #333;7 */
+        background-color: none; /* Change to your preferred hover color */
+      }
+      .copy-Right {
+        padding-left:650px;
+      }
+
+
+      
+
+
+@media  (max-width:570px) {
+  .footer-button {
+    padding-right: 100px;
+    padding-top:20px;
+    width: 90%; /* Make the button width responsive */
+    left: 5%; /* Adjust the horizontal position */
+    transform: none; /* Remove the horizontal centering */
+  }
+  
+}
+@media (max-width: 768px) {
+  .copy-Right {
+    display: none; /* Hide the copyright text on screens smaller than 768px */
+  }
+
+  .footer-button {
+    padding-right: 420px;
+    padding-top:20px;
+    width: 90%; /* Make the button width responsive */
+    left: 5%; /* Adjust the horizontal position */
+    transform: none; /* Remove the horizontal centering */
+  }
+
+}
+
+@media (max-width: 550px) {
+  .footer-button {
+    padding-left: 100px; /* Reset padding-right */
+    display: none;}
+  }
+
+  @media (max-width: 768px) {
+  .circle-element {
+    width: 30vw;
+    height: 30vw;
+    right: 2.5vw;
+    /* position: fixed; */
+  }
+}
+
+@media  (max-width:1300px) {
+  .circle-element{
+    display: flex;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .circle-element {
+    display: none; /* Add this line */
+  }
+}
+
+          </style>
+      
+      
+      <div class="footer-wrapper">
+                <footer>
+                  <div>
+                    <div class="footer-content">
+                      <span>
+                        <img src="images/home-bg.jpg" alt="Small Image">
+                        <h1>Barkat Computers & <br>CCTV Installation</h1>
+                      </span>
+                      <div class="copy-Right">
+                        <p>© 2023 All Rights Reserved</p>
+                      </div>
+                    </div>
+                    <div class="footer-button">
+                      <a href="#contact">Contact</a>
+                    </div>
+                  </div>
+                </footer>
+                <div class="circle-element">
+                  <img src="images/home-bg.jpg" alt="Image Description">
+                </div>
+              </div>
+         
+      </div>
+    </footer>
+    <script>
+      let nav = document.querySelector("nav");
+        window.onscroll = function() {
+          if(document.documentElement.scrollTop > 20){
+            nav.classList.add("sticky");
+          }else {
+            nav.classList.remove("sticky");
+          }
+        }
+      </script>
+
+  </body>
+</html>

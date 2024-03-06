@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARKAT COMPUTING</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+      .contact-section{
+        padding:0;
+      }
+        .contact-banner {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .contact-banner img {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 1;
+            /* margin-top: 100px; */
+        
+        }
+        .contact-banner img:hover {
+            opacity: 0.5;
+        }
+
+        .banner-text {
+            position:absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            
+        }
+
+        .banner-text h1 {
+            font-size: 60px;
+        }
+
+        .banner-text p{
+        margin: 0;
+        }
+
+    /* .footer {
+        margin: 5%;
+    } */
+
+    @media screen and (max-width: 560px) {
+  .navbar #hamburger-btn {
+    cursor: pointer;
+    padding-right: 1.5% ;
+    display: block;
+   
+  }
+}
+   
+        /* Your existing styles go here */
+
+        @media screen and (max-width: 768px) {
+          
+            .banner-text h1 {
+                color:black;
+                padding-top:200px;
+                font-size: 30px; /* Adjust the font size for smaller screens */
+            }
+            .banner-text p{
+                color:black;
+                font-size: 15px; /* Adjust the font size for smaller screens */
+            }
+
+            .contact-banner img {
+                display: flex;
+                opacity: 0.5;
+            }
+
+            .info-mp {
+                padding-top: 10px; /* Adjust padding for smaller screens */
+                margin: 15%; /* Add margin between info and map */
+                text-align: center;
+                /* margin-bottom: 10%; */
+
+          
+            }
+
+            .map {
+                padding-bottom: 50px; /* Adjust padding for smaller screens */
+                margin-bottom: 20px; /* Add margin between info and map */
+            }
+
+            .contain {
+                flex-direction: column; /* Stack elements vertically on smaller screens */
+            }
+        }
+
+    </style>
+ 
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h2 class="logo"><a href="#">LOGO</a></h2>
+      <input type="checkbox" id="menu-toggler">
+      <label for="menu-toggler" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="24px" height="24px">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+      </label>
+      <ul class="all-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>  
+  
+    <div class="contact-banner">
+        <img src="images/home-bg.jpg" alt="Contact Us">
+        <div class="banner-text">
+            <h1>Contact Us</h1>
+            <p>Providing customized computer solutions and expert CCTV installation</p>
+        </div>
+    </div>
+  </section>
+
+<style>
+
+/* Add styling as needed */
+
+.contain {
+    display: flex;
+    align-content: space-between;
+    gap: 2%;
+    margin: 5%;
+    padding:0;
+}
+
+.info-mp {
+
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    margin-top:60px;
+}
+.contact-section {
+    padding-left: 0;
+}
+
+.map {
+   
+    border-radius: 10px; /* Adjust the value as needed */
+    overflow: hidden; /* Ensure that the border-radius is applied to the content */
+    padding-bottom: 100px;
+
+}
+
+
+.map iframe {
+    border: none; /* Remove iframe border */
+    border-radius: 10px; /* Adjust the value as needed */
+  
+}
+.info-mp h2,
+.info-mp h3,
+.info-mp p {
+    margin-bottom: 5px; /* Adjust the value as needed for the desired spacing */
+    margin-top:0%
+}
+        </style>
+
+        <section class="contact-section">
+            <div class="contain">
+                <div class="info-mp">
+                    <!-- Your info content goes here -->
+                    <h2>Location</h2>
+                    <h3>Address</h3>
+                    <p> Besides Dr. K V Mehta, Momnawad Main Road,
+                        Near Sagrampura Police Chowki, 
+                       Gopipura, Surat, 395001</p>
+                       <h3>Timings</h3>
+                       <p>Mon - Sun 10:00 am - 8:00 pm</p>
+                </div>
+                <div class="map">
+                    <!-- Your map content goes here -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.8299686228397!2d72.82445720539268!3d21.194240873380775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e63a5de0acb%3A0x1d1ec460506206f7!2sMehta%20Dr%20Krishnakant%20Venilal!5e0!3m2!1sen!2sin!4v1709493588566!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>      
+</section>
+  
+  <style>
+
+footer {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  height: 350px;
+  justify-content: center;
+  overflow: hidden;
+  background: #002080;
+  padding: 20px 0;
+  -webkit-clip-path: ellipse(71% 59% at 50% 60%);
+  clip-path: ellipse(71% 59% at 50% 60%);
+  position: relative;
+}
+
+footer div {
+  flex-direction: column;
+  padding: 0 10px;
+  max-width: 170vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 100;
+  z-index: 1;
+}
+
+footer div span {
+  flex-direction: column;
+  color: #fff;
+  width: 100%;
+  margin-left:80px;
+}
+.footer-button{
+  margin-top: -17px;
+  margin-right: 80px;
+
+}
+
+footer img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+ .circle-element {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  right: 295px;
+  top: 10%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Add this line */
+   clip-path: circle(50% at 50% 50%); 
+}
+.circle-element img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.footer-wrapper {
+  position: relative;
+}
+.footer-button{
+  padding-right: 76%;
+  width: 500px;
+}
+.footer-button a {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  
+}
+
+.footer-button a:hover {
+  /* color: #333;7 */
+  background-color: none; /* Change to your preferred hover color */
+}
+.copy-Right {
+  padding-left:650px;
+}
+
+
+
+@media  (max-width:570px) {
+  .footer-button {
+    padding-right: 100px;
+    padding-top:20px;
+    width: 90%; /* Make the button width responsive */
+    left: 5%; /* Adjust the horizontal position */
+    transform: none; /* Remove the horizontal centering */
+  }
+  
+}
+@media (max-width: 768px) {
+  .copy-Right {
+    display: none; /* Hide the copyright text on screens smaller than 768px */
+  }
+
+  .footer-button {
+    padding-right: 420px;
+    padding-top:20px;
+    width: 90%; /* Make the button width responsive */
+    left: 5%; /* Adjust the horizontal position */
+    transform: none; /* Remove the horizontal centering */
+  }
+
+}
+
+@media (max-width: 550px) {
+  .footer-button {
+    padding-left: 100px; /* Reset padding-right */
+    display: none;}
+  }
+
+  @media (max-width: 768px) {
+  .circle-element {
+    width: 30vw;
+    height: 30vw;
+    right: 2.5vw;
+    /* position: fixed; */
+  }
+}
+
+@media  (max-width:1300px) {
+  .circle-element{
+    display: flex;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .circle-element {
+    display: none; /* Add this line */
+  }
+}
+    </style>
+
+
+<div class="footer-wrapper">
+          <footer>
+            <div>
+              <div class="footer-content">
+                <span>
+                  <img src="images/home-bg.jpg" alt="Small Image">
+                  <h1>Barkat Computers & <br>CCTV Installation</h1>
+                </span>
+                <div class="copy-Right">
+                  <p>© 2023 All Rights Reserved</p>
+                </div>
+              </div>
+              <div class="footer-button">
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </footer>
+          <div class="circle-element">
+            <img src="images/home-bg.jpg" alt="Image Description">
+          </div>
+        </div>
+  <script>
+    let nav = document.querySelector("nav");
+      window.onscroll = function() {
+        if(document.documentElement.scrollTop > 20){
+          nav.classList.add("sticky");
+        }else {
+          nav.classList.remove("sticky");
+        }
+      }
+    </script>
+
+</body>
+</html>
